@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 184 120 352 136)
+	(rect 176 120 344 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "pc_in[7..0]" (rect 5 0 55 11)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 184 144 352 160)
+	(rect 176 144 344 160)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clock" (rect 5 0 30 11)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 184 192 352 208)
+	(rect 176 192 344 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "reset" (rect 5 0 29 11)(font "Arial" ))
 	(pt 168 8)
@@ -69,9 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 184 168 352 184)
+	(rect 176 168 344 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "enable_pc" (rect 5 0 57 11)(font "Arial" ))
+	(text "enable_pc" (rect 5 0 56 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -142,10 +142,30 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 120 112))
 	)
 )
-(connector
-	(pt 416 128)
-	(pt 352 128)
-	(bus)
+(symbol
+	(rect 352 184 400 216)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 32)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
 )
 (connector
 	(pt 552 128)
@@ -155,14 +175,6 @@ applicable agreement for further details.
 (connector
 	(pt 416 144)
 	(pt 408 144)
-)
-(connector
-	(pt 408 144)
-	(pt 408 152)
-)
-(connector
-	(pt 408 152)
-	(pt 352 152)
 )
 (connector
 	(pt 416 160)
@@ -177,14 +189,27 @@ applicable agreement for further details.
 	(pt 400 200)
 )
 (connector
-	(pt 400 200)
+	(pt 344 200)
 	(pt 352 200)
 )
 (connector
-	(pt 392 176)
-	(pt 392 160)
+	(pt 408 144)
+	(pt 408 152)
 )
 (connector
+	(pt 392 160)
 	(pt 392 176)
-	(pt 352 176)
+)
+(connector
+	(pt 344 128)
+	(pt 416 128)
+	(bus)
+)
+(connector
+	(pt 344 152)
+	(pt 408 152)
+)
+(connector
+	(pt 344 176)
+	(pt 392 176)
 )

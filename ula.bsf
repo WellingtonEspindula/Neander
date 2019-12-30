@@ -40,16 +40,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "S1" (rect 0 0 16 13)(font "Arial" (font_size 8)))
-		(text "S1" (rect 21 59 37 72)(font "Arial" (font_size 8)))
+		(text "byps" (rect 0 0 27 13)(font "Arial" (font_size 8)))
+		(text "byps" (rect 21 59 48 72)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "S0" (rect 0 0 16 13)(font "Arial" (font_size 8)))
-		(text "S0" (rect 21 75 37 88)(font "Arial" (font_size 8)))
+		(text "S1" (rect 0 0 16 13)(font "Arial" (font_size 8)))
+		(text "S1" (rect 21 75 37 88)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "S0" (rect 0 0 16 13)(font "Arial" (font_size 8)))
+		(text "S0" (rect 21 91 37 104)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 152 32)

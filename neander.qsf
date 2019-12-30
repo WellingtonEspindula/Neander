@@ -79,6 +79,11 @@ set_global_assignment -name BDF_FILE rad.bdf
 set_global_assignment -name BDF_FILE uc/ccpe.bdf
 set_global_assignment -name BDF_FILE uc/mux2to1_4b.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE uc/Waveform_ccpe.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_neander.vwf
+set_global_assignment -name BDF_FILE reg_nz.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_regnz.vwf
+set_global_assignment -name BDF_FILE mux_ula.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mux_ula_wv.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
