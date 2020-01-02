@@ -53,6 +53,8 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR /home/wellington/Desktop/circuitos_dig/neander/simulation/qsim/ -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name BDF_FILE uc/jnnorjzz.bdf
+set_global_assignment -name BDF_FILE uc/ccsaida.bdf
 set_global_assignment -name VHDL_FILE div_freq/div_freq.vhd
 set_global_assignment -name BDF_FILE uc/reg_estados.bdf
 set_global_assignment -name BDF_FILE mem/palavra.bdf
@@ -84,6 +86,9 @@ set_global_assignment -name BDF_FILE reg_nz.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_regnz.vwf
 set_global_assignment -name BDF_FILE mux_ula.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mux_ula_wv.vwf
+set_global_assignment -name BDF_FILE uc/mux2to1_10b.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE uc/Waveform_ccsaida.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE uc/Waveform_UC.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

@@ -1,0 +1,25 @@
+CC SAIDA - NEANDER
+
+IF NOT FETCH
+[9] SelMux1 = (!EA2*EA1*!EA0)+(EA3*!EA2*!EA0)+(EA3*!EA2*EA1)+(!EA3*EA2*!EA0)
+[8] SelMux0 = GND
+[7] enablePC = (EA3*EA2)+(EA3*EA1)+(!EA0)
+[6] SelUla1 = (EA3*EA1)
+[5] SelUla0 = (!EA2)
+[4] enableAC = (!EA3*!EA2*EA1*!EA0)
+[3] bypass = enableAC = (!EA3*!EA2*EA1*!EA0)
+[2] write = (EA3*!EA2*!EA0)+(!EA3*EA2*!EA0)
+[1] reset = (EA3*EA2*EA1)
+[0] HLT = GND
+
+IF FETCH
+[9] SelMux1 = GND
+[8] SelMux0 = GND
+[7] enablePC = (!IN2)+(!IN3)
+[6] SelUla1 = VCC
+[5] SelUla0 = GND
+[4] enableAC = (IN2*IN1*!IN0)
+[3] Bypass = GND
+[2] Write = GND
+[1] reset = (IN3*!IN2*IN1*IN0)+(IN3*IN2*!IN1)+(!IN3*IN2*IN1*IN0)+(IN3*IN2*!IN0)
+[0] HLT = IN3*IN2*IN1*IN0
