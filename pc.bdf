@@ -142,31 +142,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 120 112))
 	)
 )
-(symbol
-	(rect 352 184 400 216)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 21 26 32)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
 (connector
 	(pt 552 128)
 	(pt 624 128)
@@ -189,10 +164,6 @@ applicable agreement for further details.
 	(pt 400 200)
 )
 (connector
-	(pt 344 200)
-	(pt 352 200)
-)
-(connector
 	(pt 408 144)
 	(pt 408 152)
 )
@@ -212,4 +183,8 @@ applicable agreement for further details.
 (connector
 	(pt 344 176)
 	(pt 392 176)
+)
+(connector
+	(pt 400 200)
+	(pt 344 200)
 )

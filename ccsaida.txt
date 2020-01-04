@@ -3,7 +3,7 @@ CC SAIDA - NEANDER
 IF NOT FETCH
 [9] SelMux1 = (!EA2*EA1*!EA0)+(EA3*!EA2*!EA0)+(EA3*!EA2*EA1)+(!EA3*EA2*!EA0)
 [8] SelMux0 = GND
-[7] enablePC = (EA3*EA2)+(EA3*EA1)+(!EA0)
+[7] enablePC = (EA3*EA2)+(!EA3*EA2*!EA1)+(EA0)
 [6] SelUla1 = (EA3*EA1)
 [5] SelUla0 = (!EA2)
 [4] enableAC = (!EA3*!EA2*EA1*!EA0)

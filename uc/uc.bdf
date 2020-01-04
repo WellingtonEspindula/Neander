@@ -71,7 +71,23 @@ applicable agreement for further details.
 	(input)
 	(rect -64 272 104 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ck" (rect 5 0 17 11)(font "Arial" ))
+	(text "ck" (rect 5 0 16 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -56 312 112 328)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset_in" (rect 5 0 45 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -213,9 +229,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 496 88 672 104)
+	(rect 512 440 688 456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "pe[3..0]" (rect 90 0 127 11)(font "Arial" ))
+	(text "dbg_pe[3..0]" (rect 90 0 151 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -229,9 +245,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 560 264 736 280)
+	(rect 520 416 696 432)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ea[3..0]" (rect 90 0 127 11)(font "Arial" ))
+	(text "dbg_ea[3..0]" (rect 90 0 151 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -373,19 +389,6 @@ applicable agreement for further details.
 	(pt 536 168)
 )
 (connector
-	(pt 560 184)
-	(pt 560 192)
-)
-(connector
-	(pt 568 184)
-	(pt 560 184)
-)
-(connector
-	(text "reset" (rect 531 176 555 187)(font "Arial" ))
-	(pt 560 192)
-	(pt 512 192)
-)
-(connector
 	(pt 288 232)
 	(pt 288 168)
 	(bus)
@@ -486,13 +489,13 @@ applicable agreement for further details.
 	(pt 176 280)
 )
 (connector
-	(pt 496 96)
-	(pt 480 96)
+	(pt 480 152)
+	(pt 480 448)
 	(bus)
 )
 (connector
-	(pt 480 152)
-	(pt 480 96)
+	(pt 480 448)
+	(pt 512 448)
 	(bus)
 )
 (connector
@@ -506,26 +509,36 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 488 232)
-	(pt 488 272)
-	(bus)
+	(text "reset_in" (rect 120 304 160 315)(font "Arial" ))
+	(pt 112 320)
+	(pt 216 320)
 )
 (connector
-	(pt 488 272)
-	(pt 560 272)
+	(text "reset_in" (rect 512 168 552 179)(font "Arial" ))
+	(pt 504 184)
+	(pt 568 184)
+)
+(connector
+	(pt 504 232)
+	(pt 504 424)
 	(bus)
 )
 (connector
 	(pt 288 232)
-	(pt 488 232)
+	(pt 504 232)
 	(bus)
 )
 (connector
-	(pt 488 232)
+	(pt 504 232)
 	(pt 744 232)
+	(bus)
+)
+(connector
+	(pt 504 424)
+	(pt 520 424)
 	(bus)
 )
 (junction (pt 744 152))
 (junction (pt 480 152))
-(junction (pt 488 232))
+(junction (pt 504 232))
 (text "data_in[7..4]" (rect 771 120 832 131)(font "Arial" ))

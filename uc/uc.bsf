@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 208 208)
+	(rect 16 16 208 240)
 	(text "uc" (rect 5 0 20 13)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 177 25 188)(font "Arial" ))
+	(text "inst" (rect 8 209 25 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -50,6 +50,13 @@ applicable agreement for further details.
 		(text "ck" (rect 0 0 14 13)(font "Arial" (font_size 8)))
 		(text "ck" (rect 21 75 35 88)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "reset_in" (rect 0 0 44 13)(font "Arial" (font_size 8)))
+		(text "reset_in" (rect 21 91 65 104)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 192 32)
@@ -107,7 +114,21 @@ applicable agreement for further details.
 		(text "hlt" (rect 157 139 171 152)(font "Arial" (font_size 8)))
 		(line (pt 192 144)(pt 176 144))
 	)
+	(port
+		(pt 192 160)
+		(output)
+		(text "dbg_ea[3..0]" (rect 0 0 70 13)(font "Arial" (font_size 8)))
+		(text "dbg_ea[3..0]" (rect 101 155 171 168)(font "Arial" (font_size 8)))
+		(line (pt 192 160)(pt 176 160)(line_width 3))
+	)
+	(port
+		(pt 192 176)
+		(output)
+		(text "dbg_pe[3..0]" (rect 0 0 70 13)(font "Arial" (font_size 8)))
+		(text "dbg_pe[3..0]" (rect 101 171 171 184)(font "Arial" (font_size 8)))
+		(line (pt 192 176)(pt 176 176)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 176 176))
+		(rectangle (rect 16 16 176 208))
 	)
 )
