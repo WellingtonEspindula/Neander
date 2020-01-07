@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -184 600 -16 616)
+	(rect -472 472 -304 488)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clock_in" (rect 5 0 45 11)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 312 576 480 592)
+	(rect -448 672 -280 688)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clock" (rect 5 0 30 11)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 320 968 504 984)
+	(rect -464 800 -280 816)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
 	(text "dbg_data_ac[7..0]" (rect 5 0 93 11)(font "Arial" ))
 	(pt 184 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 328 904 496 920)
+	(rect -456 736 -288 752)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "reset_in" (rect 5 0 45 11)(font "Arial" ))
 	(pt 168 8)
@@ -325,7 +325,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1208 672 1384 688)
+	(rect 1696 688 1872 704)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "uc[9..0]" (rect 90 0 126 11)(font "Arial" ))
 	(pt 0 8)
@@ -341,7 +341,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 840 840 856)
+	(rect 904 768 1080 784)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "dbg_ea[3..0]" (rect 90 0 151 11)(font "Arial" ))
 	(pt 0 8)
@@ -357,7 +357,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 856 840 872)
+	(rect 904 784 1080 800)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "dbg_pe[3..0]" (rect 90 0 151 11)(font "Arial" ))
 	(pt 0 8)
@@ -467,7 +467,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 8 576 216 752)
+	(rect -280 448 -72 624)
 	(text "div_freq" (rect 5 0 45 11)(font "Arial" ))
 	(text "inst8" (rect 8 160 31 171)(font "Arial" ))
 	(port
@@ -677,7 +677,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 520 896 584 944)
+	(rect -264 728 -200 776)
 	(text "OR2" (rect 1 0 22 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 37 26 48)(font "Arial" ))
 	(port
@@ -796,7 +796,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 672 912 704 944)
+	(rect -112 744 -80 776)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst11" (rect 3 21 32 32)(font "Arial" )(invisible))
 	(port
@@ -856,7 +856,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 680 784 728 816)
+	(rect 920 712 968 744)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 21 32 32)(font "Arial" ))
 	(port
@@ -994,9 +994,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 352 632 544 856)
+	(rect 592 560 784 784)
 	(text "uc" (rect 5 0 20 13)(font "Arial" (font_size 8)))
-	(text "inst5" (rect 8 209 31 220)(font "Arial" ))
+	(text "inst14" (rect 8 209 37 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1309,160 +1309,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 8 608)
-	(pt -16 608)
-)
-(connector
-	(text "sel_mux[1],sel_mux[0],en_pc,sel_ula[1],sel_ula[0],en_ac,byps,write,reset_uc,hlt" (rect 768 664 1156 675)(font "Arial" ))
-	(pt 1208 680)
-	(pt 760 680)
-	(bus)
-)
-(connector
-	(text "dbg_data_ac[7..0]" (rect 512 960 600 971)(font "Arial" ))
-	(pt 504 976)
-	(pt 632 976)
-	(bus)
-)
-(connector
-	(pt 520 912)
-	(pt 496 912)
-)
-(connector
-	(pt 512 928)
-	(pt 512 944)
-)
-(connector
-	(pt 520 928)
-	(pt 512 928)
-)
-(connector
-	(text "reset_uc" (rect 457 928 499 939)(font "Arial" ))
-	(pt 512 944)
-	(pt 424 944)
-)
-(connector
-	(text "sel_ula[1..0]" (rect 588 680 648 691)(font "Arial" ))
-	(pt 544 696)
-	(pt 672 696)
-	(bus)
-)
-(connector
-	(text "en_ac" (rect 625 696 655 707)(font "Arial" ))
-	(pt 544 712)
-	(pt 672 712)
-)
-(connector
-	(text "byps" (rect 598 712 621 723)(font "Arial" ))
-	(pt 544 728)
-	(pt 672 728)
-)
-(connector
-	(text "write" (rect 598 728 621 739)(font "Arial" ))
-	(pt 544 744)
-	(pt 672 744)
-)
-(connector
-	(text "reset_uc" (rect 552 744 594 755)(font "Arial" ))
-	(pt 544 760)
-	(pt 672 760)
-)
-(connector
-	(text "negative" (rect 288 664 330 675)(font "Arial" ))
-	(pt 352 680)
-	(pt 280 680)
-)
-(connector
-	(text "zero" (rect 288 680 310 691)(font "Arial" ))
-	(pt 352 696)
-	(pt 280 696)
-)
-(connector
-	(text "data_mem[7..0]" (rect 288 648 364 659)(font "Arial" ))
-	(pt 352 664)
-	(pt 280 664)
-	(bus)
-)
-(connector
-	(text "ck" (rect 295 696 306 707)(font "Arial" ))
-	(pt 352 712)
-	(pt 280 712)
-)
-(connector
-	(text "reset" (rect 297 712 321 723)(font "Arial" ))
-	(pt 352 728)
-	(pt 280 728)
-)
-(connector
-	(text "reset" (rect 705 896 729 907)(font "Arial" ))
-	(pt 688 912)
-	(pt 736 912)
-)
-(connector
-	(pt 656 792)
-	(pt 656 848)
-	(bus)
-)
-(connector
-	(pt 656 848)
-	(pt 664 848)
-	(bus)
-)
-(connector
-	(pt 648 808)
-	(pt 648 864)
-	(bus)
-)
-(connector
-	(pt 544 808)
-	(pt 648 808)
-	(bus)
-)
-(connector
-	(pt 648 864)
-	(pt 664 864)
-	(bus)
-)
-(connector
-	(pt 672 776)
-	(pt 672 800)
-)
-(connector
-	(pt 544 776)
-	(pt 672 776)
-)
-(connector
-	(text "hlt" (rect 560 760 571 771)(font "Arial" ))
-	(pt 672 800)
-	(pt 680 800)
-)
-(connector
-	(text "nhlt" (rect 736 784 754 795)(font "Arial" ))
-	(pt 728 800)
-	(pt 792 800)
-)
-(connector
-	(pt 544 792)
-	(pt 656 792)
-	(bus)
-)
-(connector
-	(text "ck" (rect 488 568 499 579)(font "Arial" ))
-	(pt 480 584)
-	(pt 608 584)
-)
-(connector
-	(text "sel_mux[1..0]" (rect 592 648 658 659)(font "Arial" ))
-	(pt 544 664)
-	(pt 672 664)
-	(bus)
-)
-(connector
-	(text "en_pc" (rect 625 664 655 675)(font "Arial" ))
-	(pt 544 680)
-	(pt 672 680)
-)
-(connector
 	(pt 1352 312)
 	(pt 1440 312)
 )
@@ -1670,6 +1516,160 @@ applicable agreement for further details.
 	(text "reset" (rect 640 272 664 283)(font "Arial" ))
 	(pt 704 288)
 	(pt 632 288)
+)
+(connector
+	(text "sel_mux[1],sel_mux[0],en_pc,sel_ula[1],sel_ula[0],en_ac,byps,write,reset_uc,hlt" (rect 1256 680 1644 691)(font "Arial" ))
+	(pt 1696 696)
+	(pt 1248 696)
+	(bus)
+)
+(connector
+	(pt 896 776)
+	(pt 904 776)
+	(bus)
+)
+(connector
+	(pt 888 792)
+	(pt 904 792)
+	(bus)
+)
+(connector
+	(text "hlt" (rect 800 688 811 699)(font "Arial" ))
+	(pt 912 728)
+	(pt 920 728)
+)
+(connector
+	(text "nhlt" (rect 976 712 994 723)(font "Arial" ))
+	(pt 968 728)
+	(pt 1032 728)
+)
+(connector
+	(text "sel_ula[1..0]" (rect 828 608 888 619)(font "Arial" ))
+	(pt 784 624)
+	(pt 912 624)
+	(bus)
+)
+(connector
+	(text "en_ac" (rect 865 624 895 635)(font "Arial" ))
+	(pt 784 640)
+	(pt 912 640)
+)
+(connector
+	(text "byps" (rect 838 640 861 651)(font "Arial" ))
+	(pt 784 656)
+	(pt 912 656)
+)
+(connector
+	(text "write" (rect 838 656 861 667)(font "Arial" ))
+	(pt 784 672)
+	(pt 912 672)
+)
+(connector
+	(text "reset_uc" (rect 792 672 834 683)(font "Arial" ))
+	(pt 784 688)
+	(pt 912 688)
+)
+(connector
+	(text "negative" (rect 528 592 570 603)(font "Arial" ))
+	(pt 592 608)
+	(pt 520 608)
+)
+(connector
+	(text "zero" (rect 528 608 550 619)(font "Arial" ))
+	(pt 592 624)
+	(pt 520 624)
+)
+(connector
+	(text "data_mem[7..0]" (rect 528 576 604 587)(font "Arial" ))
+	(pt 592 592)
+	(pt 520 592)
+	(bus)
+)
+(connector
+	(text "ck" (rect 535 624 546 635)(font "Arial" ))
+	(pt 592 640)
+	(pt 520 640)
+)
+(connector
+	(text "reset" (rect 537 640 561 651)(font "Arial" ))
+	(pt 592 656)
+	(pt 520 656)
+)
+(connector
+	(pt 896 776)
+	(pt 896 720)
+	(bus)
+)
+(connector
+	(pt 888 792)
+	(pt 888 736)
+	(bus)
+)
+(connector
+	(pt 888 736)
+	(pt 784 736)
+	(bus)
+)
+(connector
+	(pt 912 728)
+	(pt 912 704)
+)
+(connector
+	(pt 912 704)
+	(pt 784 704)
+)
+(connector
+	(pt 896 720)
+	(pt 784 720)
+	(bus)
+)
+(connector
+	(text "sel_mux[1..0]" (rect 832 576 898 587)(font "Arial" ))
+	(pt 784 592)
+	(pt 912 592)
+	(bus)
+)
+(connector
+	(text "en_pc" (rect 865 592 895 603)(font "Arial" ))
+	(pt 784 608)
+	(pt 912 608)
+)
+(connector
+	(pt -280 480)
+	(pt -304 480)
+)
+(connector
+	(text "ck" (rect -272 664 -261 675)(font "Arial" ))
+	(pt -280 680)
+	(pt -152 680)
+)
+(connector
+	(text "dbg_data_ac[7..0]" (rect -272 792 -184 803)(font "Arial" ))
+	(pt -280 808)
+	(pt -152 808)
+	(bus)
+)
+(connector
+	(pt -264 744)
+	(pt -288 744)
+)
+(connector
+	(pt -272 760)
+	(pt -272 776)
+)
+(connector
+	(pt -264 760)
+	(pt -272 760)
+)
+(connector
+	(text "reset_uc" (rect -327 760 -285 771)(font "Arial" ))
+	(pt -272 776)
+	(pt -360 776)
+)
+(connector
+	(text "reset" (rect -79 728 -55 739)(font "Arial" ))
+	(pt -96 744)
+	(pt -48 744)
 )
 (junction (pt 304 176))
 (junction (pt -144 88))
