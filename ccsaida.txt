@@ -19,7 +19,7 @@ IF FETCH
 [6] SelUla1 = VCC
 [5] SelUla0 = GND
 [4] enableAC = (IN2*IN1*!IN0)
-[3] Bypass = GND
+[3] Bypass = (!EA2)+(EA3)+(EA0)+(!EA1)
 [2] Write = GND
 [1] reset = (IN3*!IN2*IN1*IN0)+(IN3*IN2*!IN1)+(!IN3*IN2*IN1*IN0)+(IN3*IN2*!IN0)
 [0] HLT = IN3*IN2*IN1*IN0
